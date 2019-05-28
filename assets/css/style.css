@@ -66,7 +66,6 @@ h3 {
 #logo {
   float: left;
   width: 250px;
-  /* width: 100%; */
   height: 90px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 30px;
@@ -85,6 +84,7 @@ nav {
 
 nav a {
   display: inline-block;
+  padding-right: 30px;
   padding-left: 15px;
   margin-left: 15px;
   line-height: 18px;
@@ -217,9 +217,7 @@ input[type=submit] {
   border: 0 none;
 }
 
-/*
-  These rules take effect when the browser's width reduces to at or below the specified width
-*/
+
 @media only screen and (max-width: 640px) {
   #masthead {
     position: static;
@@ -234,6 +232,19 @@ input[type=submit] {
   nav {
     float: none;
     text-align: center;
+    clear: both;
+  }
+
+  .auth-image {
+    float: none;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+  }
+
+  .work {
+    width: 100%;
   }
 }
 
